@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.navbar img {
+    float: left;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: purple;
+    font-weight: bolder;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 20px;
+}
+
+.navbar h1 {
+    color: orange;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(43, 230, 230);
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    font-family: Arial-rounded;
+}
+
+.navbar a {
+    float: down;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: pink;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.c-css-slider {
+    position: relative;
+}
+
+.c-css-slider__input {
+    display: none;
+}
+
+.c-css-slider__slides-wrapper {
+    position: relative;
+    overflow: scroll;
+    width: 100%;
+}
+
+.c-css-slider__slides {
+    display: flex;
+    width: 200%;
+    transition: 800ms;
+}
+
+#slide1:checked~.c-css-slider__slides-wrapper .c-css-slider__slides {
+    margin-left: 0%;
+}
+
+#slide2:checked~.c-css-slider__slides-wrapper .c-css-slider__slides {
+    margin-left: 100%;
+}
+
+.c-css-slider__slide {
+    width: calc(100% / 2);
+}
+
+.c-css-slider__slide img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.main_text h1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: cyan;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Times new roman", "serif";
+}
+
+.main_text h3 {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    font-size: 60px;
+    color: cyan;
+    font-weight: bold;
+    font-family: "Times new roman", "serif";
+}
+
+.side1 {
+    background-color: #fae1b2;
+    padding: 20px;
+    text-align: center;
+    height: 300px;
+}
+
+.side1 img {
+    float: right;
+}
+
+.side1 p {
+    font-weight: bold;
+    font-size: large;
+    color: peru;
+}
+
+.side1 h2 {
+    font-weight: bold;
+    font-size: large;
+    color: brown;
+    font-size: xx-large;
+}
+
+.side1 a {
+    float: left;
+    display: block;
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 20px;
+}
+
+.side1 a:hover {
+    background-color: brown;
+}
+
+.side2 {
+    background-color: cornsilk;
+    padding: 30px;
+    text-align: left;
+    height: 350px;
+}
+
+.side2 img {
+    float: left;
+}
+
+.side2 pre {
+    font-weight: bold;
+    font-size: large;
+    color: lightcoral;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.side2 pre:hover {
+    background-color: lightcyan;
+}
+
+.side2 h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: orangered;
+    font-size: xx-large;
+}
+
+.side2 a {
+    float: right;
+    display: block;
+    font-size: 50px;
+    color: purple;
+    font-weight: bolder;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 20px;
+}
+
+.side2 a:hover {
+    background-color: white;
+}
+
+.side2 span {
+    color: orange;
+}
+
+.main {
+    flex: 70%;
+    background-color: pink;
+    padding: 20px;
+}
+
+.side3 .price1 {
+    background-color: white;
+}
+
+.side3 .container1 .price1 p {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
