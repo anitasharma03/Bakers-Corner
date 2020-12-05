@@ -319,7 +319,7 @@ h2 {
     border-collapse: collapse;
 }
 
-input[type='email'] {
+input[type=email] {
     width: 25%;
     background-color: ghostwhite;
     min-height: 20px;
@@ -327,33 +327,27 @@ input[type='email'] {
     padding: 12px 20px;
 }
 
-input[type='email']:hover {
+input[type=email]:hover {
     color: black;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.footer input[type=submit] {
+    width: 10%;
+    min-height: 48px;
+    background-color: ghostwhite;
+    color: black;
+}
+
+.footer input[type=submit]:hover {
+    color: cornflowerblue;
     font-weight: bolder;
 }
 
 .footer {
     background-color: lightsteelblue;
     padding: 2%;
-}
-
-.footer h3 {
-    text-align: left;
-    font-size: 24px;
-    color: black;
-    margin: 24px 0 12px 0;
-}
-
-.footer form {
-    text-align: left;
-    border-collapse: collapse;
-}
-
-.footer input[type='submit'] {
-    width: 10%;
-    min-height: 48px;
-    background-color: #007bff;
-    font-weight: 500;
 }
 
 .footer-link {
@@ -371,24 +365,6 @@ input[type='email']:hover {
     font-size: 24px;
     font-weight: bolder;
     text-align: left;
-}
-
-input[type='email'] {
-    width: 25%;
-    background-color: ghostwhite;
-    min-height: 20px;
-    margin-top: 16px;
-    font-weight: 400;
-    padding: 12px 20px;
-}
-
-input[type='email']:hover {
-    color: black;
-    font-weight: 300;
-}
-
-.box-container {
-    width: 100%;
 }
 
 .fa-facebook {
@@ -473,8 +449,16 @@ hr.solid {
     .footer input[type='submit'] {
         width: 20%;
         min-height: 48px;
-        background-color: #007bff;
+        background-color: white;
         font-weight: 500;
+    }
+    .footer input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .footer input[type=email] {
+        width: 86%;
+        margin-top: 0;
     }
     .side-4 h2 {
         font-size: 28px;
@@ -607,8 +591,16 @@ hr.solid {
     .footer input[type='submit'] {
         width: 20%;
         min-height: 48px;
-        background-color: #007bff;
+        background-color: white;
         font-weight: 500;
+    }
+    .footer input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .footer input[type=email] {
+        width: 94%;
+        margin-top: 0;
     }
     #shef-1-image {
         float: none;

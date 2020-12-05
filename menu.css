@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgba(250, 96, 206, 0.73), rgba(228, 104, 190, 0.73), rgb(245, 84, 191)), url('pics/pic10.jpg');
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    font-size: 15ch;
+    color: blueviolet;
+    font-family: 'Sacramento', cursive;
+    font-weight: bolder;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pill-nav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: rgb(176, 22, 236);
+}
+
+.pill-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.main-1 {
+    padding: 0 16px;
+}
+
+.section#side-1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.section#side-1 img {
+    width: 100%;
+    float: right;
+    margin-left: 15px;
+    border: 2px solid white;
+    border-radius: 2em;
+}
+
+.section div#side-1-img {
+    width: 25%;
+}
+
+.section div#side-1-cupcake1 {
+    margin: 32px 0;
+    width: 70%;
+}
+
+.section#side-2 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.section#side-2 img {
+    width: 100%;
+    float: right;
+    margin-left: 15px;
+    border: 2px solid white;
+    border-radius: 2em;
+}
+
+.section div#side-2-img {
+    width: 25%;
+}
+
+.section div#side-2-cupcake2 {
+    margin: 32px 0;
+    width: 70%;
+}
+
+.section#side-3 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.section#side-3 img {
+    width: 100%;
+    float: right;
+    margin-left: 15px;
+    border: 2px solid white;
+    border-radius: 2em;
+}
+
+.section div#side-3-img {
+    width: 25%;
+}
+
+.section div#side-3-cupcake3 {
+    margin: 32px 0;
+    width: 70%;
+}
+
+.section div#side-1-cake1 {
+    margin: 32px 0;
+    width: 70%;
+}
+
+.section div#side-1-cookie1 {
+    margin: 32px 0;
+    width: 70%;
+}
+
+.section div#side-2-cookie2 {
+    margin: 32px 0;
+    width: 70%;
+}
+
+.section div#side-1-pastry1 {
+    margin: 32px 0;
+    width: 70%;
+}
+
+.section div#side-2-pastry2 {
+    margin: 32px 0;
+    width: 70%;
+}
+
+.section div#side-1-donut1 {
+    margin: 32px 0;
+    width: 70%;
+}
+
+.section div#side-2-donut2 {
+    margin: 32px 0;
+    width: 70%;
+}
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.image-container-box {
+    width: 24%;
+    transition: transform .2s;
+}
+
+.h1 {
+    color: white;
+    font-size: 5ch;
+}
+
+.image-description {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    padding: 8px;
+}
+
+.image-description-container {
+    background-color: white;
+    width: 100%;
+}
+
+.image-container-box:hover {
+    transform: scale(1.04);
+}
+
+.footer {
+    background-color: lightsteelblue;
+    padding: 2%;
+}
+
+.footer h3 {
+    text-align: left;
+    font-size: x-large;
+    font-weight: 100;
+    color: black;
+    font-weight: bolder;
+}
+
+.footer form {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+input[type=email] {
+    width: 25%;
+    background-color: ghostwhite;
+    min-height: 20px;
+    margin-top: 16px;
+    padding: 12px 20px;
+}
+
+input[type=email]:hover {
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.footer input[type=submit] {
+    width: 10%;
+    min-height: 48px;
+    background-color: ghostwhite;
+    color: black;
+}
+
+.footer input[type=submit]:hover {
+    color: cornflowerblue;
+    font-weight: bolder;
+}
+
+.footer-link {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer thead {
+    color: palevioletred;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.box-container {
+    width: 100%;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+#social-container-item-2 a {
+    font-size: 20px !important;
+}
+
+hr.solid {
+    border-top: 3px solid grey;
+}
+
+#social-container {
+    display: flex;
+}
+
+#social-container-item-1,
+#social-container-item-2 {
+    text-align: center;
+}
+
+#social-container-item-3 {
+    text-align: right;
+}
+
+@media screen and (max-width: 780px) and (min-width: 480px) {
+    .main-1,
+    .img-container,
+    .image-description,
+    .image-description-container,
+    .container,
+    .footer,
+    .centered,
+    .pill-nav,
+    .footer input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    input[type=email] {
+        width: 94%;
+    }
+    .image-container-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .main-1,
+    .img-container,
+    .image-container-box,
+    .image-description,
+    .image-description-container,
+    .pill-nav,
+    .footer,
+    .centered,
+    input[type=email],
+    .footer input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .container {
+        font-size: 10ch;
+    }
+    input[type=email] {
+        width: 89%;
+    }
+    .section div#side-1-img {
+        width: 100% !important;
+    }
+    .section div#side-2-img {
+        width: 100% !important;
+    }
+    .section div#side-3-img {
+        width: 100% !important;
+    }
+}

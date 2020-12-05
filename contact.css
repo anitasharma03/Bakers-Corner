@@ -98,7 +98,7 @@ input[type=email]:hover {
 }
 
 .footer input[type=submit] {
-    width: 20%;
+    width: 10%;
     min-height: 48px;
     background-color: ghostwhite;
     color: black;
@@ -179,6 +179,9 @@ hr.solid {
     }
     .section#side-1 form {
         max-width: 250px;
+    }
+    input[type=email] {
+        width: 100%;
     }
 }
 

@@ -180,15 +180,14 @@ a:hover {
     border-collapse: collapse;
 }
 
-input[type=email] {
+.footer input[type=email] {
     width: 25%;
     background-color: ghostwhite;
-    min-height: 20px;
-    margin-top: 16px;
+    min-height: 19px;
     padding: 12px 20px;
 }
 
-input[type=email]:hover {
+.footer input[type=email]:hover {
     color: black;
     font-size: large;
     font-weight: bolder;
@@ -198,6 +197,7 @@ input[type=email]:hover {
     width: 10%;
     min-height: 48px;
     background-color: ghostwhite;
+    color: black;
 }
 
 .footer input[type=submit]:hover {
@@ -261,7 +261,7 @@ hr.solid {
     text-align: right;
 }
 
-@media screen and (max-width: 768px) and (min-width: 480px) {
+@media screen and (max-width: 780px) and (min-width: 480px) {
     .main-image,
     .img-container,
     #section,
@@ -269,10 +269,7 @@ hr.solid {
     .image-description-container,
     .image-container-box-2,
     .image-container-box-1,
-    .footer,
-    input[type=submit],
-    input[type=email],
-    .footer input[type=submit] {
+    .footer {
         width: 100%;
         margin-top: 0;
     }
@@ -282,18 +279,39 @@ hr.solid {
     .header {
         width: 100%;
     }
+    input[type='email'] {
+        width: 70%;
+        background-color: ghostwhite;
+        min-height: 20px;
+        margin: 8px 0;
+        padding: 12px 20px;
+    }
+    input[type='email']:hover {
+        color: black;
+    }
+    .footer input[type='submit'] {
+        width: 20%;
+        min-height: 48px;
+        background-color: white;
+        font-weight: 500;
+    }
+    .footer input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .footer input[type=email] {
+        width: 94%;
+        margin-top: 0;
+    }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+@media screen and (max-width: 479px) {
     .img-container,
     .image-container-box,
     .image-description-container,
     .image-container-box-2,
     .image-container-box-1,
-    .footer,
-    input[type=submit],
-    input[type=email],
-    .footer input[type=submit] {
+    .footer {
         width: 100%;
         margin-top: 0;
     }
@@ -302,5 +320,30 @@ hr.solid {
     }
     #img-container {
         height: 450px;
+    }
+    input[type='email'] {
+        width: 70%;
+        background-color: ghostwhite;
+        min-height: 20px;
+        margin: 8px 0;
+        padding: 12px 20px;
+    }
+    input[type='email']:hover {
+        color: black;
+        font-weight: bolder;
+    }
+    .footer input[type='submit'] {
+        width: 20%;
+        min-height: 48px;
+        background-color: white;
+        font-weight: 500;
+    }
+    .footer input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .footer input[type=email] {
+        width: 88%;
+        margin-top: 0;
     }
 }

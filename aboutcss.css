@@ -192,11 +192,30 @@ h3:hover {
     border-collapse: collapse;
 }
 
-.footer input[type='submit'] {
+input[type=email] {
+    width: 25%;
+    background-color: ghostwhite;
+    min-height: 20px;
+    margin-top: 16px;
+    padding: 12px 20px;
+}
+
+input[type=email]:hover {
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.footer input[type=submit] {
     width: 10%;
     min-height: 48px;
-    background-color: #007bff;
-    font-weight: 500;
+    background-color: ghostwhite;
+    color: black;
+}
+
+.footer input[type=submit]:hover {
+    color: cornflowerblue;
+    font-weight: bolder;
 }
 
 .footer-link {
@@ -310,9 +329,30 @@ hr.solid {
         text-align: initial !important;
         font-size: 16px;
     }
+    input[type='email'] {
+        width: 70%;
+        background-color: ghostwhite;
+        min-height: 20px;
+        margin: 8px 0;
+        padding: 12px 20px;
+    }
+    input[type='email']:hover {
+        color: black;
+        font-weight: bolder;
+    }
     .footer input[type='submit'] {
-        width: 30%;
+        width: 20%;
         min-height: 48px;
+        background-color: white;
+        font-weight: 500;
+    }
+    .footer input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .footer input[type=email] {
+        width: 88%;
+        margin-top: 0;
     }
     .footer h3 {
         font-size: 20px;
@@ -364,5 +404,29 @@ hr.solid {
         text-align: justify;
         font-size: 18px;
         color: darkcyan;
+    }
+    input[type='email'] {
+        width: 70%;
+        background-color: ghostwhite;
+        min-height: 20px;
+        margin: 8px 0;
+        padding: 12px 20px;
+    }
+    input[type='email']:hover {
+        color: black;
+    }
+    .footer input[type='submit'] {
+        width: 20%;
+        min-height: 48px;
+        background-color: white;
+        font-weight: 500;
+    }
+    .footer input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .footer input[type=email] {
+        width: 94%;
+        margin-top: 0;
     }
 }
