@@ -1,6 +1,40 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: #fbda61;
+    background-image: linear-gradient(45deg, #fbda61 0%, #d182b9 100%);
+    background-size: cover;
+}
+
+.main {
+    flex: 70%;
+    padding: 20px;
+}
+
+.tag {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 70px;
+    width: 10%;
+}
+
+.tag img {
+    max-height: 126px;
+}
+
+.header img {
+    margin-top: 106px;
+}
+
+#nav-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 40;
+    background-color: white;
 }
 
 .navbar img {
@@ -51,83 +85,47 @@ body {
     color: white;
 }
 
-.c-css-slider {
-    position: relative;
-}
-
-.c-css-slider__input {
-    display: none;
-}
-
-.c-css-slider__slides-wrapper {
-    position: relative;
-    overflow: scroll;
-    width: 100%;
-}
-
-.c-css-slider__slides {
-    display: flex;
-    width: 200%;
-    transition: 800ms;
-}
-
-#slide1:checked~.c-css-slider__slides-wrapper .c-css-slider__slides {
-    margin-left: 0%;
-}
-
-#slide2:checked~.c-css-slider__slides-wrapper .c-css-slider__slides {
-    margin-left: 100%;
-}
-
-.c-css-slider__slide {
-    width: calc(100% / 2);
-}
-
-.c-css-slider__slide img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-}
-
 .main_text h1 {
     position: absolute;
-    top: 5%;
+    top: 15%;
     left: 5%;
     color: cyan;
     font-size: 70px;
     font-weight: bold;
-    font-family: "Times new roman", "serif";
+    font-family: 'Times new roman', 'serif';
 }
 
 .main_text h3 {
     position: absolute;
-    top: 13%;
+    top: 25%;
     left: 5%;
     font-size: 60px;
     color: cyan;
     font-weight: bold;
-    font-family: "Times new roman", "serif";
+    font-family: 'Times new roman', 'serif';
 }
 
 .side1 {
+    height: 270px;
     background-color: #fae1b2;
     padding: 20px;
     text-align: center;
-    height: 300px;
 }
 
 .side1 img {
+    width: 30%;
     float: right;
+    margin-left: 15px;
 }
 
 .side1 p {
+    text-align: justify;
     font-weight: bold;
-    font-size: large;
+    font-size: larger;
     color: peru;
 }
 
-.side1 h2 {
+.side1 h1 {
     font-weight: bold;
     font-size: large;
     color: brown;
@@ -153,25 +151,27 @@ body {
     background-color: cornsilk;
     padding: 30px;
     text-align: left;
-    height: 350px;
+    height: 330px;
 }
 
 .side2 img {
     float: left;
+    margin-right: 16px;
 }
 
-.side2 pre {
+.side2 p {
     font-weight: bold;
-    font-size: large;
+    text-align: justify;
+    font-size: larger;
     color: lightcoral;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.side2 pre:hover {
-    background-color: lightcyan;
+.side2 p:hover {
+    background-color: azure;
 }
 
-.side2 h2 {
+.side2 h1 {
     text-align: center;
     font-weight: bold;
     font-size: large;
@@ -180,7 +180,6 @@ body {
 }
 
 .side2 a {
-    float: right;
     display: block;
     font-size: 50px;
     color: purple;
@@ -198,10 +197,42 @@ body {
     color: orange;
 }
 
-.main {
-    flex: 70%;
-    background-color: pink;
-    padding: 20px;
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.image-container-box {
+    width: 30%;
+    margin: 36px 0;
+    transition: transform 0.2s;
+}
+
+.image-container-box:hover {
+    transform: scale(1.07);
+    opacity: 0.6;
+}
+
+.image-description-container {
+    background-color: white;
+    width: 100%;
+}
+
+.image-description {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+}
+
+.side3 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(80, 37, 7);
+    font-size: xx-large;
 }
 
 .side3 .price1 {
@@ -215,8 +246,383 @@ body {
     font-size: large;
 }
 
-.footer {
-    padding: 20px;
+.side4 {
+    background-image: linear-gradient( to bottom, rgba(15, 15, 17, 0.52), rgba(17, 1, 13, 0.73)), url('Images/fruit.jpg');
+    background-size: cover;
+}
+
+.side4 h1,
+h2 {
+    font-size: 32px;
+    color: red;
     text-align: center;
-    background: #ddd;
+}
+
+.side4 h1:hover {
+    color: black;
+}
+
+.side4 h2:hover {
+    color: black;
+}
+
+.side4 ul {
+    margin: 32px 0;
+    color: white;
+    font-size: larger;
+}
+
+.side4 dl {
+    text-align: center;
+}
+
+#specific-type {
+    margin-top: 130px;
+}
+
+.side4 ul li {
+    margin: 8px 0;
+}
+
+.side4 #shef-1-image {
+    margin-right: 36px;
+    float: left;
+    display: block;
+    border: 1px solid red;
+    border-radius: 1em;
+}
+
+.side4 #shef-2-image {
+    margin-right: 36px;
+    border-radius: 1em;
+    border: 1px solid red;
+    float: left;
+    display: block;
+    margin-left: 20px 15px;
+}
+
+.footer {
+    background-color: lightsteelblue;
+    padding: 2%;
+}
+
+.footer h3 {
+    text-align: left;
+    font-size: x-large;
+    font-weight: 100;
+    color: black;
+    font-weight: bolder;
+}
+
+.footer form {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+input[type='email'] {
+    width: 25%;
+    background-color: ghostwhite;
+    min-height: 20px;
+    margin-top: 16px;
+    padding: 12px 20px;
+}
+
+input[type='email']:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+.footer {
+    background-color: lightsteelblue;
+    padding: 2%;
+}
+
+.footer h3 {
+    text-align: left;
+    font-size: 24px;
+    color: black;
+    margin: 24px 0 12px 0;
+}
+
+.footer form {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.footer input[type='submit'] {
+    width: 10%;
+    min-height: 48px;
+    background-color: #007bff;
+    font-weight: 500;
+}
+
+.footer-link {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer thead {
+    color: palevioletred;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+input[type='email'] {
+    width: 25%;
+    background-color: ghostwhite;
+    min-height: 20px;
+    margin-top: 16px;
+    font-weight: 400;
+    padding: 12px 20px;
+}
+
+input[type='email']:hover {
+    color: black;
+    font-weight: 300;
+}
+
+.box-container {
+    width: 100%;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+#social-container-item-2 a {
+    font-size: 20px !important;
+}
+
+hr.solid {
+    border-top: 3px solid grey;
+}
+
+#social-container {
+    display: flex;
+}
+
+#social-container-item-1,
+#social-container-item-2 {
+    text-align: center;
+}
+
+#social-container-item-3 {
+    text-align: right;
+}
+
+@media screen and (max-width: 479px) {
+    .image-container-box {
+        width: 100%;
+        margin: 36px 0;
+    }
+    .tag img {
+        max-height: 70px;
+    }
+    .main_text h1 {
+        top: 45%;
+        font-size: 30px;
+    }
+    .main_text h3 {
+        top: 50%;
+        font-size: 30px;
+    }
+    .navbar a {
+        font-size: 16px;
+    }
+    .side1 {
+        height: 100%;
+    }
+    .side1 h1 {
+        font-size: 28px;
+    }
+    .side1 p {
+        font-size: 16px;
+    }
+    .side1 a {
+        float: none;
+        font-size: 20px;
+    }
+    input[type='email'] {
+        width: 70%;
+        background-color: ghostwhite;
+        min-height: 20px;
+        margin: 8px 0;
+        padding: 12px 20px;
+    }
+    input[type='email']:hover {
+        color: black;
+        font-weight: bolder;
+    }
+    .footer input[type='submit'] {
+        width: 20%;
+        min-height: 48px;
+        background-color: #007bff;
+        font-weight: 500;
+    }
+    .side-4 h2 {
+        font-size: 28px;
+    }
+    .side1 img {
+        width: 100%;
+        float: none;
+    }
+    .side2 {
+        background-color: cornsilk;
+        padding: 30px;
+        text-align: left;
+        height: 100%;
+    }
+    .side2 img {
+        float: none;
+        width: 100%;
+    }
+    .side2 h1 {
+        font-size: 28px;
+    }
+    .side2 p {
+        font-size: 16px;
+    }
+    .side2 h3 {
+        font-size: 20px;
+    }
+    .side4 #shef-1-image {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .side4 ul {
+        text-align: inherit;
+        font-size: 18px;
+    }
+    .side4 #shef-2-image {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .side3 h1 {
+        font-size: 28px;
+    }
+    .side4 h1 {
+        font-size: 28px;
+    }
+    .side4 h2 {
+        font-size: 28px;
+    }
+    .side4 dl {
+        font-size: 16px;
+        text-align: left;
+    }
+    table td {
+        word-break: break-word;
+    }
+    #specific-type {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 780px) and (min-width: 480px) {
+    .image-container-box {
+        width: 100%;
+        margin: 36px 0;
+    }
+    .header {
+        font-size: 36px;
+    }
+    .tag img {
+        max-height: 70px;
+    }
+    .main_text h1 {
+        top: 20%;
+        font-size: 40px;
+    }
+    .main_text h3 {
+        top: 28%;
+        font-size: 40px;
+    }
+    .navbar a {
+        font-size: 16px;
+    }
+    .side1 h1 {
+        font-size: 28px;
+    }
+    .side1 p {
+        font-size: 16px;
+    }
+    .side1 a {
+        font-size: 20px;
+    }
+    .side1 a:hover {
+        background-color: transparent;
+    }
+    .side2 {
+        height: 270px;
+    }
+    .side2 h1 {
+        font-size: 28px;
+    }
+    .side2 {
+        height: 100%;
+    }
+    .side2 p {
+        font-size: 16px;
+    }
+    .side2 a {
+        float: none;
+        font-size: 20px;
+    }
+    .side2 img {
+        width: 100%;
+    }
+    .side2 a:hover {
+        background-color: transparent;
+    }
+    .side3 h1 {
+        font-size: 28px;
+    }
+    input[type='email'] {
+        width: 70%;
+        background-color: ghostwhite;
+        min-height: 20px;
+        margin: 8px 0;
+        padding: 12px 20px;
+    }
+    input[type='email']:hover {
+        color: black;
+    }
+    .footer input[type='submit'] {
+        width: 20%;
+        min-height: 48px;
+        background-color: #007bff;
+        font-weight: 500;
+    }
+    #shef-1-image {
+        float: none;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .side4 #shef-2-image {
+        float: none;
+        width: 100%;
+    }
+    .side-4 h2 {
+        font-size: 28px;
+    }
+    #specific-type {
+        margin-top: 0;
+    }
 }

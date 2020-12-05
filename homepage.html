@@ -6,67 +6,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="homepagecss.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-    <div class="navbar">
-        <img src="Images/tag01.jpeg" alt="bakery image1" width="10%">
-        <a>
-            <marquee behavior="slide" direction="down">
-                <h1><u><i> Baking Corner </i></u></h1>
-            </marquee>
-        </a>
-        <a href="homepage.html" target="_self">
-            <marquee behavior="slide" direction="down">Home Page</marquee>
-        </a>
-        <a href="cakes.html" target="_blank">
-            <marquee behavior="slide" direction="down">Special Cakes</marquee>
-        </a>
-        <a href="menu.html" target="_blank">
-            <marquee behavior="slide" direction="down">Menu</marquee>
-        </a>
-        <a href="about.html" target="_blank" class="right">
-            <marquee behavior="slide" direction="down">About Us</marquee>
-        </a>
-        <a href="contact.html" target="_blank" class="right">
-            <marquee behavior="slide" direction="down">Contact Us</marquee>
-        </a>
-    </div>
-
-    <div class="header">
-        <div class="c-css-slider">
-            <input class="c-css-slider__input" checked type='radio' name='slider' id='slide1' />
-            <input class="c-css-slider__input" type='radio' name='slider' id='slide2' />
-            <div class="c-css-slider__slides-wrapper">
-                <ul class="c-css-slider__slides">
-                    <li class="c-css-slider__slide">
-                        <img src="Images/backgroundimage5.jpg" alt="cake image2" height="80%" width="100%">
-                    </li>
-                    <li class="c-css-slider__slide">
-                        <img src="Images/backgroundimage4.jpg" alt="cake image3" height="80%" width="100%">
-                    </li>
-                </ul>
-            </div>
+    <div id="nav-header">
+        <div class="tag">
+            <img src="Images/tag01.jpeg" alt="bakery image1">
         </div>
 
+        <div class="navbar">
 
+            <a href="homepage.html" target="_self">
+                <marquee behavior="slide" direction="down">Home Page</marquee>
+            </a>
+            <a href="spclcakes.html" target="_blank">
+                <marquee behavior="slide" direction="down">Special Cakes</marquee>
+            </a>
+            <a href="menu.html" target="_blank">
+                <marquee behavior="slide" direction="down">Menu</marquee>
+            </a>
+            <a href="about.html" target="_blank" class="right">
+                <marquee behavior="slide" direction="down">About Us</marquee>
+            </a>
+            <a href="contact.html" target="_blank" class="right">
+                <marquee behavior="slide" direction="down">Contact Us</marquee>
+            </a>
+        </div>
+    </div>
+    <div class="header">
+        <img src="Images/backgroundimage5.jpg" alt="cake image2" height="80%" width="100%">
         <div class="main_text">
             <h1>
-                <marquee behavior="slide" direction="up">Quality Cakes...</marquee>
+                <marquee class="heading-text" behavior="slide" direction="up">Quality Cakes...</marquee>
             </h1>
             <h3>
-                <I><marquee behavior="slide" direction="up">Sweeets, Breads, Eggs, Pizzas...</marquee></I>
+                <I><marquee class="heading-text" behavior="slide" direction="up">Sweeets, Breads, Eggs, Pizzas...</marquee></I>
             </h3>
         </div>
     </div>
 
     <div class="main">
         <div class="side1">
-            <img src="Images/image7.jpg" alt="image 4" height="95%" width="30%">
-            <h2>
-                <u><i>WELCOME TO BAKING CORNER</i></u>
-            </h2>
+            <img src="Images/image7.jpg" alt="image 4" height="100%" width="100%">
+            <h1>
+                <u><i>WELCOME TO BAKERS CORNER</i></u>
+            </h1>
             <p>Our Bakery primarily produces and sells flour-based food baked in oven such as breads, cookies, cakes, pastries, and pies. Also served and delievers coffee and tea to customers. Confectionery items are also made in our bakery.
             </p>
             <a href="about.html" target="_blank">
@@ -78,20 +63,15 @@
         <hr>
         <div class="side2">
             <img src="Images/image8.jpg" alt="image 5" height="95%" width="30%">
-            <h2>
-                <i>
+            <h1>
+                <i><u>
                     OUR SPECIALITY
-                </i>
-            </h2>
-            <pre>
-            We provide services for special occasions (such as weddings, anniversaries, birthday parties,
-            business networking events, etc.)or customized baked products for people who have allergies 
-            or sensitivities to certain foods (such as nuts, peanuts, dairy or gluten, etc.). Our bakery provide 
-            you a wide range of cake designs such as sheet cakes, layer cakes, wedding cakes, tiered cakes, 
-            fondant cakes etc. We are also specialize in traditional or hand-made types of baked products made
-            with locally milled flour,without flour bleaching agents or flour treatment agents, baking what is 
-            sometimes referred to as artisan bread. </pre>
-            <a href="cakes.html" target="_blank">
+                </u></i>
+            </h1>
+            <p>
+                We provide services for special occasions (such as weddings, anniversaries, birthday parties, business networking events, etc.)or customized baked products for people who have allergies or sensitivities to certain foods (such as nuts, peanuts, dairy or
+                gluten, etc.). Our bakery provide you a wide range of cake designs such as sheet cakes, layer cakes, wedding cakes, tiered cakes, fondant cakes etc. </p>
+            <a href="spclcakes.html" target="_blank">
                 <h3>Go and check our <span> SPECIAL CAKES</span></h3>
             </a>
         </div>
@@ -103,29 +83,176 @@
                 </u>
                 </i>
             </h1>
-            <div class="container1">
-                <img src="Images/image1.jpeg" alt="image 6" height="25%" width="25%">
+            <br>
+            <div class="img-container">
+                <div id="img-container-1" class="image-container-box">
+                    <img src="Images/image1.jpeg" alt="image 6" height="100%" width="100%">
+                    <div class="image-description-container">
+                        <p class="image-description">Fudgy Chocolate Brownies</p>
+                    </div>
+                </div>
+                <div id="img-container-2" class="image-container-box">
+                    <img src="Images/image12.jpg" alt="image 7" height="100%" width="100%">
+                    <div class="image-description-container">
+                        <p class="image-description">Glazed Milk Chocopie Cakes</p>
+                    </div>
+                </div>
+                <div id="img-container-3" class="image-container-box">
+                    <img src="Images/image5.jpg" alt="image 8" height="100%" width="100%">
+                    <div class="image-description-container">
+                        <p class="image-description">The Peach Cobbler Strawberry Cake</p>
+                    </div>
+                </div>
+                <div id="img-container-4" class="image-container-box">
+                    <img src="Images/image14.jpg" alt="image 9" height="100%" width="100%">
+                    <div class="image-description-container">
+                        <p class="image-description">The Apple Pie</p>
+                    </div>
+                </div>
+                <div id="img-container-5" class="image-container-box">
+                    <img src="Images/image6.jpg" alt="image 10" height="100%" width="100%">
+                    <div class="image-description-container">
+                        <p class="image-description">The Grand cookies</p>
+                    </div>
+                </div>
+                <div id="img-container-6" class="image-container-box">
+                    <img src="Images/image13.jpg" alt="image 11" height="100%" width="100%">
+                    <div class="image-description-container">
+                        <p class="image-description">Coffee Cakes with Mocha Frosting</p>
+                    </div>
+                </div>
+                <div id="img-container-7" class="image-container-box">
+                    <img src="Images/image10.jpg" alt="image 12" height="100%" width="100%">
+                    <div class="image-description-container">
+                        <p class="image-description">Bread, Bread Rolls And Buns</p>
+                    </div>
+                </div>
+                <div id="img-container-8" class="image-container-box">
+                    <img src="Images/image2.jpg" alt="image 13" height="100%" width="100%">
+                    <div class="image-description-container">
+                        <p class="image-description">Eggless Vanilla Muffins</p>
+                    </div>
+                </div>
+                <div id="img-container-9" class="image-container-box">
+                    <img src="Images/image11.jpg" alt="image 14" height="100%" width="100%">
+                    <div class="image-description-container">
+                        <p class="image-description">Classic Cake Doughnuts</p>
+                    </div>
+                </div>
             </div>
-            <div class="price1">
-                <p>Price is $15</p>
+        </div>
+        <hr>
+
+        <div class="side4">
+            <marquee behavior="slide" direction="up">
+                <h1>
+                    <i><u>
+                OUR CHEFS AND THEIR DUTIES 
+                </u></i>
+                </h1>
+            </marquee>
+            <br>
+            <img id="shef-1-image" src="Images/shef1.jpg" alt="shef 1" height="100%" width="40%">
+            <ul>
+                <li>Make baked goods and desserts applicable to the restaurant menu.</li>
+                <li>Able to prepare a wide variety of desserts and bread items from scratch.</li>
+                <li>train or supervise others.</li>
+                <li>Responsible for recipe creation and menu innovation.</li>
+                <li>Responsible for inventory and cost control.</li>
+                <li>Ability to work in a team-driven environment, take direction, offer direction and assist with problem solving.</li>
+                <li>Conducting food tastings for waitstaff and potential clients.</li>
+            </ul><br>
+            <br>
+            <marquee behavior="slide" direction="up">
+                <h2>Cake And Pastry Chefs</h2>
+            </marquee>
+            <br>
+            <br>
+            <img id="shef-2-image" src="Images/shef2.png" alt="shef 2" width="40%">
+            <ul>
+                <li>Our chefs work in a diverse array of kitchen and culinary environments.</li>
+                <li>Day-to-day operations can also require the pastry chef to research recipe concepts and develop and test new recipes. Usually the pastry chef does all the necessary preparation of the various desserts in advance, before dinner seating begins.
+                    The pastry chef is often in charge of the dessert menu, which besides traditional desserts, may include dessert wines, specialty dessert beverages, and gourmet cheese platters.</li>
+                <li>Pastry chefs are also expected to fully understand their ingredients and the chemical reactions that occur when making fine pastries. Precise timing and temperatures are critically important.</li>
+                <li>It is generally preferred to weigh the ingredients as opposed to measuring by cup, as weighing offers far more consistent baking results. In larger kitchens, the pastry chef may have a number of other chefs working in their station, each
+                    responsible for specific types of pastries:</li>
+                <div id="specific-type">
+                    <dl>
+                        <dt><b>boulanger (baker): </b></dt>
+                        <dd>responsible for breads, cakes and breakfast pastries.</dd><br>
+                        <dt><b>confiseur (confectioner):</b></dt>
+                        <dd>responsible for candies and petits fours</dd><br>
+                        <dt><b>décorateur (decorator):</b></dt>
+                        <dd>responsible for specialty cakes and show pieces</dd><br>
+                        <dt><b>glacier:</b></dt>
+                        <dd>responsible for cold and frozen desserts</dd>
+                    </dl>
+                </div>
+            </ul>
+
+            <hr>
+            <div class="footer">
+                <h3>Join and Subscribe us to get all the latest offers, discounts and other benefits.</h3>
+                <form>
+                    <div>
+                        <input type="email" name="email" placeholder="Enter Your Valid Email Address" max-length="50" size="50" required>
+                        <input type="submit" name="submit" value="Subscribe">
+                    </div>
+                </form>
+                <br>
+                <br>
+                <table style="width:100%">
+                    <thead>
+                        <tr>
+
+                            <th>Quick Links</th>
+                            <th>Work Times</th>
+                            <th>Contact Info</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            <a class="footer-link" href="about.html">About Us</a>
+                        </td>
+                        <td>Monday - Friday: 8 AM- 8 PM</td>
+                        <td>
+                            <a class="footer-link" href="tel:(1800)578 9887">Contact us at:(1800)578 9887</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="footer-link" href="contact.html">Contact Us</a>
+                        </td>
+                        <td>Saturday: 9 AM - 4 PM</td>
+                        <td>
+                            <a class="footer-link" href="mailto: bakerscorner@contact.co.in">Mail on: bakerscorner@contact.co.in</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="footer-link" href="menu.html">Our Menu</a>
+                        </td>
+                        <td>Sunday: Closed</td>
+                        <td>
+                            <address>256A-2 Bakers Corner, baker Street, New York</address>
+                        </td>
+                    </tr>
+                </table>
+                <hr class="solid">
+                <div id="social-container">
+                    <div id="social-container-item-1" style="width:33%"></div>
+                    <div id="social-container-item-2" style="width:33%" style="text-align: center;">
+
+                        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+
+                    </div>
+                    <div id="social-container-item-3" style="width:33%">
+                        &copy; 2020 Bakers Corner
+                    </div>
+                </div>
             </div>
-            <img src="Images/image12.jpg" alt="image 7" height="75%" width="30%">
-            <img src="Images/image5.jpg" alt="image 8" height="75%" width="30%">
-            <img src="Images/image14.jpg" alt="image 9" height="75%" width="30%">
-            <img src="Images/image6.jpg" alt="image 10" height="75%" width="30%">
-            <img src="Images/image13.jpg" alt="image 11" height="75%" width="30%">
-            <img src="Images/image10.jpg" alt="image 12" height="75%" width="30%">
-            <img src="Images/image11.jpg" alt="image 13" height="75%" width="30%">
-        </div>
-
-
-
-
-
-
-        <div class="footer">
-            <h2>Footer</h2>
-        </div>
 
 </body>
 

@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgba(248, 162, 33, 0.52), rgba(250, 95, 198, 0.73), rgba(218, 23, 159, 0.73), rgb(136, 20, 107));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bgimg {
+    background-image: linear-gradient(to bottom, rgba(37, 37, 46, 0.52), rgba(41, 24, 36, 0.73)), url('pics/bg1.jpg');
+    min-height: 600px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.section#side-1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 6ch;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.section#side-1 form {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+input[type=text],
+[type=number],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=submit] {
+    background-color: #f369ae;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    min-height: 48px;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #9c9c9c;
+    font-weight: bolder;
+}
+
+.map {
+    margin-top: 5px;
+}
+
+.footer {
+    background-color: lightsteelblue;
+    padding: 2%;
+}
+
+.footer h3 {
+    text-align: left;
+    font-size: x-large;
+    font-weight: 100;
+    color: black;
+    font-weight: bolder;
+}
+
+.footer form {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+input[type=email] {
+    width: 25%;
+    background-color: ghostwhite;
+    min-height: 20px;
+    margin-top: 16px;
+    padding: 12px 20px;
+}
+
+input[type=email]:hover {
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.footer input[type=submit] {
+    width: 20%;
+    min-height: 48px;
+    background-color: ghostwhite;
+    color: black;
+}
+
+.footer input[type=submit]:hover {
+    color: cornflowerblue;
+    font-weight: bolder;
+}
+
+.footer-link {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer thead {
+    color: palevioletred;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.box-container {
+    width: 100%;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+#social-container-item-2 a {
+    font-size: 20px !important;
+}
+
+hr.solid {
+    border-top: 3px solid grey;
+}
+
+#social-container {
+    display: flex;
+}
+
+#social-container-item-1,
+#social-container-item-2 {
+    text-align: center;
+}
+
+#social-container-item-3 {
+    text-align: right;
+}
+
+@media screen and (max-width: 780px) and (min-width: 480px) {
+    .bgimg,
+    .footer,
+    input[type=submit],
+    input[type=email],
+    .footer input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .section#side-1 {
+        font-size: 4ch;
+    }
+    .section#side-1 form {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .bgimg,
+    .footer,
+    input[type=submit],
+    input[type=email],
+    .footer input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .section#side-1 {
+        font-size: 3ch;
+    }
+    .section#side-1 form {
+        margin-top: 90px;
+        margin-right: 2px;
+        width: 70%;
+    }
+}
